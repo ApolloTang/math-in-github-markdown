@@ -31,6 +31,7 @@ $$
 See equation$(\ref{eq4})$ and equation$(\ref{eq2})$
 ```
 
+Result:
 $$
 \begin{align}
   g &= \int_a^b f(x)dx \label{eq4}\tag{4} \\
@@ -38,5 +39,14 @@ $$
 \end{align}
 $$
 See equation$(\ref{eq4})$ and equation$(\ref{eq2})$
+
+---
+
+
+**Here is some math!**
+
+```math
+\sqrt{3}
+```
 
 
