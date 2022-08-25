@@ -8,15 +8,14 @@ a = b + c
 $$
 ```
 
-Result:
-
+*Result:*
 $$
 g = \int_a^b f(x)dx \\
 a = b + c
 \tag{44}
 $$
 
-In the above there is only one `\tag{}` is allowed. If you want to use multiple `\tag{}` wrap them in `\begin{align}...\end{align}`:
+In the above, only one `\tag{}` is allowed per codeblock. If you want to use multiple `\tag{}`, wrap them in `\begin{align}...\end{align}`:
 
 ```
 $$
@@ -27,7 +26,7 @@ $$
 $$
 ```
 
-Result:
+*Result:*
 $$
 \begin{align}
   g &= \int_a^b f(x)dx \tag{3a} \\
@@ -46,7 +45,7 @@ $$
 See equation$(\ref{eq4})$ and equation$(\ref{eq2})$
 ```
 
-Result:
+*Result:*
 $$
 \begin{align}
   g &= \int_a^b f(x)dx \label{eq4}\tag{4} \\
@@ -55,14 +54,13 @@ $$
 $$
 See equation$(\ref{eq4})$ and equation$(\ref{eq2})$
 
-
-`\ref{}` only works in in MathJax, it does not work in vscode because vscode use (KeTex). `\ref{}` suppose to work on github since github uses MathJax but does some it is now broken:
+`\ref{}` only works in in MathJax, it does not work in vscode because vscode uses (KeTex). `\ref{}` suppose to work on github since github uses MathJax however, this seem to be broken:
 
 ---
 
-The following suppose to work in github but it is broken
+The following suppose to work in github but it is broken:
+
 ```math
 \sqrt{3}
 ```
-
 
