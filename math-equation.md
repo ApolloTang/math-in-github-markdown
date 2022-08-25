@@ -1,4 +1,4 @@
-This is how you equations number to a math sandbox:
+This is how you number equations in a math sandbox:
 
 ```
 $$
@@ -41,14 +41,13 @@ You can reference an equation:
 $$
 \begin{align}
   g &= \int_a^b f(x)dx \label{eq4}\tag{4} \\
-  a &= b + c \label{eq2}\tag{2}
+  a &= b + c           \label{eq2}\tag{2}
 \end{align}
 $$
 See equation$(\ref{eq4})$ and equation$(\ref{eq2})$
 ```
 
 *Result:*
-
 $$
 \begin{align}
   g &= \int_a^b f(x)dx \label{eq4}\tag{4} \\
