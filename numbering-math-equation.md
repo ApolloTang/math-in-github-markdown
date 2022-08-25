@@ -1,4 +1,4 @@
-This is how you number equations in a math sandbox:
+This is how you number equations in a math code sandbox:
 
 ```
 $$
@@ -16,7 +16,7 @@ a = b + c
 \tag{44}
 $$
 
-In the above, only one `\tag{}` is allowed per codeblock. If you want to use multiple `\tag{}`, wrap them in `\begin{align}...\end{align}`:
+In the above, only one `\tag{}` is allowed per code sandblock. If you want to use multiple `\tag{}`, wrap them in `\begin{align}...\end{align}`:
 
 ```
 $$
@@ -35,13 +35,15 @@ $$
   a &= b + c           \tag{3b}
 \end{align}
 $$
+
+Note: the above does not work in KaTeX.
 
 You can reference an equation:
 ```
 $$
 \begin{align}
-  g &= \int_a^b f(x)dx \label{eq4}\tag{4} \\
-  a &= b + c           \label{eq2}\tag{2}
+  g &= \int_a^b f(x)dx      \label{eq4}\tag{4} \\
+  a &= b + c                \label{eq2}\tag{2}
 \end{align}
 $$
 See equation$(\ref{eq4})$ and equation$(\ref{eq2})$
@@ -56,13 +58,5 @@ $$
 $$
 See equation$(\ref{eq4})$ and equation$(\ref{eq2})$
 
-`\ref{}` only works in in MathJax, it does not work in vscode because vscode uses (KeTex). `\ref{}` suppose to work on github since github uses MathJax however, this seem to be broken:
-
----
-
-The following suppose to work in github but it is broken:
-
-```math
-\sqrt{3}
-```
+`\ref{}` only works in in MathJax, it does not work in vscode because vscode uses (KaTex). `\ref{}` suppose to work on github since github uses MathJax however, this seem to be broken:
 
