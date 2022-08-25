@@ -9,6 +9,7 @@ $$
 ```
 
 *Result:*
+
 $$
 g = \int_a^b f(x)dx \\
 a = b + c
@@ -27,6 +28,7 @@ $$
 ```
 
 *Result:*
+
 $$
 \begin{align}
   g &= \int_a^b f(x)dx \tag{3a} \\
@@ -46,6 +48,7 @@ See equation$(\ref{eq4})$ and equation$(\ref{eq2})$
 ```
 
 *Result:*
+
 $$
 \begin{align}
   g &= \int_a^b f(x)dx \label{eq4}\tag{4} \\
