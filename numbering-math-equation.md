@@ -1,4 +1,10 @@
-This is how you number equations in a math code sandbox:
+# Numbering Equation in github's markdown
+
+
+
+## Using `\tag` to number equations
+
+You can use `\tag` to number equations in a math code sandbox:
 
 ```
 $$
@@ -16,7 +22,13 @@ a = b + c
 \tag{44}
 $$
 
-In the above, only one `\tag{}` is allowed per code sandblock. If you want to use multiple `\tag{}`, wrap them in `\begin{align}...\end{align}`:
+In the above, only one `\tag{}` is allowed per code sandblock. 
+
+
+
+## Multiple `\tag` in a math code sandbox
+
+If you want to use multiple `\tag{}`, wrap them in `\begin{align}...\end{align}`:
 
 ```
 $$
@@ -36,9 +48,14 @@ $$
 \end{align}
 $$
 
-Note: the above does not work in KaTeX.
+:warning: **Note:** the above does not work in KaTeX, but will work in MathJax
 
-You can reference an equation:
+
+
+## Referencing equations:
+
+You can reference an equation using `\ref`:
+
 ```
 $$
 \begin{align}
@@ -58,5 +75,15 @@ $$
 $$
 See equation$(\ref{eq4})$ and equation$(\ref{eq2})$
 
-`\ref{}` only works in in MathJax, it does not work in vscode because vscode uses (KaTex). `\ref{}` suppose to work on github since github uses MathJax however, this seem to be broken:
+
+
+`\ref` only works in in MathJax;  since github uses MathJax this should work but currently (2022.08.25) `\ref` is broken on github. see issue: https://github.com/shd101wyy/markdown-preview-enhanced/issues/251 
+
+
+
+## Auto numbering
+
+
+
+see issue: https://github.com/shd101wyy/markdown-preview-enhanced/issues/251 
 
